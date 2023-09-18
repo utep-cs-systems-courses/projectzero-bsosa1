@@ -25,4 +25,8 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
-
+// Prints a arrow of specified height
+void print_arrow(int leftCol, int size){
+  print_triangle(leftCol, size);
+  print_square(leftCol + 4, size);
+}
